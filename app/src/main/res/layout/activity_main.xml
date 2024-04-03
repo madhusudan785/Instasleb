@@ -1,0 +1,182 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/model"
+        android:layout_width="120dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="275dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/logo" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="230dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardBackgroundColor="#00FFFFFF"
+        android:padding="2dp"
+        android:elevation="0dp"
+        app:cardElevation="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/model">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/messageleft"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:text="@string/are_u_14_years_or_older"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:layout_marginTop="8dp"
+            android:textColor="#AF46AD"
+            />
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView1">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="520dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="0dp"
+            android:elevation="8dp"
+            android:padding="2dp"
+            android:rotation="5"
+            android:scaleType="centerCrop"
+            android:scaleX="-1"
+            android:src="@drawable/terms1"
+            android:contentDescription="@string/img" />
+
+        <ImageView
+            android:layout_width="420dp"
+            android:layout_height="85dp"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="-27dp"
+            android:background="@drawable/platform" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="-6dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:elevation="4dp"
+            app:cardBackgroundColor="#B6A931"
+            app:cardCornerRadius="22dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/card_shape"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="170dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="32dp"
+                    android:text="By Clicking Continue, I Agree That I Am At Least 14 Years Old"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/yes_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_shape"
+                        android:elevation="10dp"
+                        android:text="@string/yes_continue"
+                        android:textAllCaps="false" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/no_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_shape_y"
+                        android:elevation="10dp"
+                        android:text="@string/no_i_m_not_14" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="76dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2"
+        app:layout_constraintVertical_bias="0.985"
+        app:srcCompat="@drawable/lights"
+        android:contentDescription="@string/lights" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="60dp"
+        android:scaleX="-1"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/lights"
+        android:contentDescription="@string/lights2" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

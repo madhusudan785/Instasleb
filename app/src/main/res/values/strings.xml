@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">InstaSleb</string>
+    <string name="by_clicking_continue_i_agree_that_i_am_at_least_14_years_old">By Clicking Continue, I Agree That I Am At Least 14 Years Old</string>
+    <string name="are_u_14_years_or_older">Are U 14 Years Or Older?</string>
+    <string name="no_i_m_not_14">No, I\'m not 14</string>
+    <string name="lights">lights</string>
+    <string name="lights2">lights2</string>
+    <string name="yes_continue">Yes, Continue</string>
+    <string name="img">img</string>
+    <string name="logo">logo</string>
+</resources>
